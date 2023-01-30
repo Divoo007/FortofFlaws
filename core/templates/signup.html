@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Some random page bro</title>
+    <!-- SEO Meta Tags-->
+   
+  </head>
+  <!-- Body-->
+  <body>
+    Yo sign in bro
+    <form class="needs-validation" method="POST" novalidate>
+      {% csrf_token %}
+{% if eror == True %}
+<!-- Danger alert -->
+<div class="alert alert-danger" role="alert">
+The passwords do not match. Please try again.
+</div>
+{% endif %}
+<div class="mb-3">
+<input class="form-control" type="text" placeholder="Full name" name="name" required>
+</div>
+<div class="mb-3">
+<input class="form-control" type="text" placeholder="Webpage name" name="pagename" required>
+</div>
+<div class="mb-3">
+<input class="form-control" type="email" placeholder="Email" name="email" required>
+</div>
+<div class="input-group mb-3">
+<div class="password-toggle w-100">
+<input class="form-control" type="password" placeholder="Password" name="password" required>
+<label class="password-toggle-btn" aria-label="Show/hide password">
+<input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+</label>
+</div>
+</div>
+<div class="input-group mb-3">
+<div class="password-toggle w-100">
+<input class="form-control" type="password" placeholder="Confirm password" name="confirmPassword" required>
+<label class="password-toggle-btn" aria-label="Show/hide password">
+<input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+</label>
+</div>
+</div>
+<button class="btn btn-primary d-block w-100" type="submit">Sign up</button>
+
+
+  </body>
+</html>
