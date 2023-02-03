@@ -31,4 +31,4 @@ def combine_audio(vidname, audname, outname, fps=60):
     final_clip = my_clip.set_audio(audio_background)
     final_clip.write_videofile(outname,fps=fps)
 
-combine_audio("my_video.mp4", "somename.mp3", "my_video.mp4") # i rewrite on the same file                                                                                   
+combine_audio("my_video.mp4", "somename.mp3", "my_video.mp4")                                                                                
