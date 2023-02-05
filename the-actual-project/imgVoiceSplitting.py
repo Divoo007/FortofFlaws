@@ -1,6 +1,6 @@
 import os
 import openai
-openai.api_key = "YOUR_API_KEY"
+openai.api_key = "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"
 from gptResponse import generate_gpt3_response
 from requests import get
 import random as rn

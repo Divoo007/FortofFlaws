@@ -1,7 +1,7 @@
 import os
 import openai as ai
 
-ai.api_key = "YOUR_API_KEY"
+ai.api_key = "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"
 
 gptResult = None
 
